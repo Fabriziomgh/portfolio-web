@@ -31,7 +31,7 @@ const Projects = () => {
                   <h4 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
                      {item.name}
                   </h4>
-                  <Highlights highlights={item.highlights} variante="default" />
+                  <Highlights highlights={item.highlights} />
                   <p className="mt-2 text-gray-700 dark:text-gray-400">
                      {item.description}
                   </p>

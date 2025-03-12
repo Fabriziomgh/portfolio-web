@@ -1,4 +1,3 @@
-import { ModeToggle } from '@/components/mode-toggle';
 const links = [
    {
       label: 'Sobre mí',
@@ -37,10 +36,6 @@ const Navbar = () => {
                      </a>
                   </li>
                ))}
-
-               <li>
-                  <ModeToggle />
-               </li>
             </ul>
          </nav>
       </header>
