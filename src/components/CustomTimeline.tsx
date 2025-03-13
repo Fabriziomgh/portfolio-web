@@ -27,14 +27,14 @@ export const CustomTimeline = ({ data, formatType }: Props) => {
             return (
                <li key={item.company} className="mb-8 ms-4">
                   <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border  border-gray-900 bg-gray-700"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-gray-500 capitalize">
+                  <time className="mb-1 text-sm font-normal leading-none text-gray-500 capitalize block">
                      {date}
                   </time>
                   <a
                      href={item.url}
                      target="_blank"
                      title={`Visitar sitio web de ${item.company}`}
-                     className="block w-max text-lg font-semibold hover:underline  active:underline text-yellow-200"
+                     className="inline-block  text-lg font-semibold hover:underline  active:underline text-yellow-200 "
                   >
                      {item.company}
                   </a>

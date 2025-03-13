@@ -28,7 +28,7 @@ const Projects = () => {
                   />
                </div>
                <div className="md:col-span-2">
-                  <h4 className="text-2xl font-bold text-white mb-2 ">
+                  <h4 className="text-2xl font-bold text-white mb-2  ">
                      {item.name}
                   </h4>
                   <Highlights highlights={item.highlights} />
