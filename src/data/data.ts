@@ -1,3 +1,13 @@
+import {
+   Git,
+   Github,
+   JavaScript,
+   MySQL,
+   Nextjs,
+   React,
+   TailwindCSS,
+   TypeScript,
+} from '@/components/Icons';
 import { TbBrandLinkedin, TbBrandGithub } from 'react-icons/tb';
 
 export const cv = {
@@ -32,6 +42,21 @@ export const cv = {
       ],
    },
    work: [
+      {
+         name: 'Instituto Nacional de los Espacios Acuáticos',
+         position: 'División de Tecnología',
+         url: 'https://www.inea.gob.ve/',
+         startDate: '2023-10-03',
+         endDate: '2024-01-24',
+         summary:
+            'Diseño y desarrollo de un sistema de gestión de expedientes para los trabajadores utilizando tecnologías como React para la interfaz de usuario y MySQL para la base de datos para agilizar las funciones dentro del area. Soporte técnico dentro del departamento de Recursos Humanos, asegurando la eficiencia y el funcionamiento óptimo de los sistemas informáticos.',
+         highlights: [
+            'Soporte técnico',
+            'Desarrollo y programación',
+            'Configuración de equipos',
+            'Redes',
+         ],
+      },
       {
          name: 'MangoNetwork C.A',
          position: 'Analista de Soporte Técnico',
@@ -94,7 +119,7 @@ export const cv = {
          url: 'https://www.udemy.com/certificate/UC-20a7294e-baa2-4ae8-81c2-b6a7d6f007c3/',
       },
       {
-         name: ' Tailwind CSS Start to Mastery with 18 Project Examples 2024',
+         name: ' Tailwind CSS Start to Mastery',
          date: '2024-11-04',
          issuer: 'Udemy',
          url: 'https://www.udemy.com/certificate/UC-8413a096-07f3-4bf3-af18-6cf751c32755/',
@@ -110,16 +135,50 @@ export const cv = {
       },
    ],
    skills: {
+      technologies: [
+         {
+            name: 'Javascript',
+            icon: JavaScript,
+         },
+         {
+            name: 'Typescript',
+            icon: TypeScript,
+         },
+         {
+            name: 'React.js',
+            icon: React,
+         },
+         {
+            name: 'Next.js',
+            icon: Nextjs,
+         },
+         {
+            name: 'Tailwind CSS',
+            icon: TailwindCSS,
+         },
+         {
+            name: 'Git',
+            icon: Git,
+         },
+         {
+            name: 'Github',
+            icon: Github,
+         },
+         {
+            name: 'MySQL',
+            icon: MySQL,
+         },
+      ],
       technicalSkills: [
          {
             categoria: 'Lenguajes de Programación',
             descripcion:
-               'Conocimientos en JavaScript y TypeScript, con énfasis en desarrollo Frontend',
+               'Conocimientos y habilidades en JavaScript y TypeScript, con énfasis en desarrollo Frontend',
          },
          {
             categoria: 'Desarrollo Frontend',
             descripcion:
-               'Conocimientos en React.js, Next.js y TailwindCSS para creación de interfaces modernas',
+               'Conocimientos y habilidades en React.js, Next.js y TailwindCSS para creación de interfaces modernas',
          },
          {
             categoria: 'Control de Versiones',

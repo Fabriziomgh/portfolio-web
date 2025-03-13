@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+import { clsx } from 'clsx';
 const links = [
    {
       label: 'Sobre mí',
@@ -12,8 +14,8 @@ const links = [
       href: '#educacion',
    },
    {
-      label: 'Hábilidades',
-      href: '#habilidades',
+      label: 'Tecnologías',
+      href: '#tecnologias',
    },
    {
       label: 'Proyectos',
@@ -22,14 +24,50 @@ const links = [
 ];
 
 const Navbar = () => {
+   const [activeSection, setActiveSection] = useState('');
+
+   useEffect(() => {
+      const handleScroll = () => {
+         links.forEach((link) => {
+            const section = document.querySelector(link.href) as HTMLElement;
+            if (section) {
+               const sectionTop = section.offsetTop;
+               const sectionHeight = section.offsetHeight;
+
+               if (
+                  window.scrollY >= sectionTop - sectionHeight / 3 &&
+                  window.scrollY < sectionTop + sectionHeight
+               ) {
+                  setActiveSection(link.href);
+               }
+            }
+         });
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+   }, []);
+
    return (
       <header className="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2">
-         <nav className="w-full flex justify-center text-sm font-medium">
-            <ul className=" shadow-lg bg-gray-200/90 flex md:py-2 px-2 md:px-4 md:gap-x-4 gap-x-2 text-[10px] md:text-base justify-center items-center w-max rounded-3xl  ">
+         <nav className="flex px-3  rounded-full text-gray-200 justify-center items-center">
+            <ul
+               className={clsx(
+                  'flex py-2 px-4 md:gap-x-4 gap-x-2 text-xs md:text-sm justify-center items-center w-max rounded-3xl',
+                  {
+                     'shadow-lg bg-gray-700': activeSection !== '',
+                  }
+               )}
+            >
                {links.map((item) => (
                   <li key={item.href}>
                      <a
-                        className="hover:text-blue-500 transition"
+                        className={clsx(
+                           'transition duration-200 hover:text-blue-500  font-medium',
+                           {
+                              'text-blue-500': activeSection === item.href,
+                           }
+                        )}
                         href={item.href}
                      >
                         {item.label}
