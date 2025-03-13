@@ -28,13 +28,11 @@ const Projects = () => {
                   />
                </div>
                <div className="md:col-span-2">
-                  <h4 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
+                  <h4 className="text-2xl font-bold text-gray-800 ">
                      {item.name}
                   </h4>
                   <Highlights highlights={item.highlights} />
-                  <p className="mt-2 text-gray-700 dark:text-gray-400">
-                     {item.description}
-                  </p>
+                  <p className="mt-2 text-gray-700 ">{item.description}</p>
 
                   <div className="mt-6 flex items-center gap-2">
                      {item.isActive && (

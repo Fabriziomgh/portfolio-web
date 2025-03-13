@@ -24,7 +24,7 @@ const Experience = () => {
                   >
                      <div>
                         <div className="flex gap-2">
-                           <h3 className="text-xl font-bold text-yellow-400 dark:text-yellow-200">
+                           <h3 className="text-xl font-bold text-yellow-400 ">
                               {item.name}
                            </h3>
                            <a
@@ -35,16 +35,16 @@ const Experience = () => {
                               <TbCirclesRelation size={18} />
                            </a>
                         </div>
-                        <h4 className="font-semibold text-xl text-gray-600 dark:text-white">
+                        <h4 className="font-semibold text-xl text-gray-600 ">
                            {item.position}
                         </h4>
-                        <time className="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">
+                        <time className="p-0 m-0 text-sm text-gray-600/80 ">
                            {startDate} - {endDate}
                         </time>
                      </div>
 
                      <div className="mt-2 md:mt-0">
-                        <p className=" text-gray-600 dark:text-gray-300 text-[14px]">
+                        <p className=" text-gray-600  text-[14px]">
                            {item.summary}
                         </p>
                         <Highlights highlights={item.highlights} />

@@ -2,7 +2,7 @@ import { TbBrandLinkedin, TbBrandGithub } from 'react-icons/tb';
 
 export const cv = {
    basics: {
-      name: 'Fabrizio Miguel Gutiérrez Hernández',
+      name: 'Fabrizio Gutiérrez',
       level: 'Ingeniero de Sistemas',
       label: 'Programador Web - Frontend',
       phone: '',
@@ -10,7 +10,7 @@ export const cv = {
       email: 'gutierrezfabrizio02@gmail.com',
       url: '',
       summary:
-         'Mi objetivo es aplicar mis habilidades y conocimientos para diseñar experiencias web interactivas, funcionales y eficientes. Mi compromiso con la mejora continua y mi pasión por la tecnología me motivan a mantenerme siempre actualizado con las últimas tendencias y mejores prácticas en el desarrollo Frontend. Me entusiasma el desarrollo ágil y el trabajo colaborativo en equipos multidisciplinarios para lograr soluciones innovadoras y de alto impacto',
+         'Habilidad y conocimientos para diseñar experiencias web interactivas, funcionales y eficientes. Mi compromiso con la mejora continua y mi pasión por la tecnología me motivan a mantenerme siempre actualizado con las últimas tendencias y mejores prácticas en el desarrollo Frontend. Me entusiasma el desarrollo ágil y el trabajo colaborativo en equipos multidisciplinarios para lograr soluciones innovadoras y de alto impacto',
       location: {
          address: '',
          postalCode: '',
