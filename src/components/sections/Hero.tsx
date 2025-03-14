@@ -39,7 +39,7 @@ const Hero = () => {
                </p>
             </div>
             <img
-               className="size-28 lg:size-40 rounded-full shadow shadow-gray-700 mb-2 lg:mb-0"
+               className="size-28 lg:size-40 rounded-full shadow shadow-gray-700 mb-4 lg:mb-0"
                src={image}
                alt="Fabrizio Gutierrez"
             />
