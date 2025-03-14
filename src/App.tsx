@@ -1,10 +1,12 @@
 import Hero from '@/components/sections/Hero';
-import Navbar from '@/components/sections/Navbar';
 import Experience from '@/components/sections/Experience';
 import Education from '@/components/sections/Education';
 import Skills from '@/components/sections/Skills';
 import Projects from '@/components/sections/Projects';
 import Certificates from '@/components/sections/Certificates';
+
+import { Navbar } from '@/components/sections/Navbar';
+import { Footer } from '@/components/Footer';
 
 const App = () => {
    return (
@@ -21,6 +23,8 @@ const App = () => {
             <Skills />
             <Projects />
          </div>
+
+         <Footer />
       </main>
    );
 };

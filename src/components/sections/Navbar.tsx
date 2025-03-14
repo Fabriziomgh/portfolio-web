@@ -23,7 +23,7 @@ const links = [
    },
 ];
 
-const Navbar = () => {
+export const Navbar = () => {
    const [activeSection, setActiveSection] = useState('');
 
    useEffect(() => {
@@ -53,9 +53,9 @@ const Navbar = () => {
          <nav className="flex px-3  rounded-full text-gray-200 justify-center items-center">
             <ul
                className={clsx(
-                  'flex py-2 px-4 md:gap-x-4 gap-x-2 text-xs md:text-sm justify-center items-center w-max rounded-3xl',
+                  'flex py-2 px-4 md:gap-x-4 gap-x-2 text-[10px] sm:text-sm justify-center items-center w-max rounded-3xl',
                   {
-                     'shadow-lg bg-gray-700': activeSection !== '',
+                     'shadow-lg bg-gray-700 ': activeSection !== '',
                   }
                )}
             >
@@ -79,5 +79,3 @@ const Navbar = () => {
       </header>
    );
 };
-
-export default Navbar;

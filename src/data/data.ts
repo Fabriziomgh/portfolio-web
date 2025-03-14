@@ -251,12 +251,22 @@ export const cv = {
    ],
    projects: [
       {
+         name: 'World Rank',
+         img: '/img/world-rank.png',
+         isActive: true,
+         description:
+            'World Rank es una web que te permite ver todos los datos de un país en concreto, como tambien variedad de filtros para mostrar diferente información',
+         highlights: ['React.js', 'Next.js', 'Tailwind CSS'],
+         url: 'https://world-rank-beta.vercel.app/',
+         github: 'https://github.com/Fabriziomgh/world-rank',
+      },
+      {
          name: 'JS Quizz',
          img: '/img/quizz.png',
          isActive: true,
          description:
             'JS Quiz es una aplicación web que permite a los usuarios responder preguntas y obtener su puntuación al final del cuestionario ',
-         highlights: ['React', 'Zustand', 'Material UI'],
+         highlights: ['React.js', 'Zustand', 'Material UI'],
          url: 'https://js-quizz.vercel.app/',
          github: 'https://github.com/Fabriziomgh/js-quizz',
       },
