@@ -265,34 +265,20 @@ export const cv = {
          img: '/img/quizz.png',
          isActive: true,
          description:
-            'JS Quiz es una aplicación web que permite a los usuarios responder preguntas y obtener su puntuación al final del cuestionario ',
+            'JS Quiz es una aplicación web que permite a los usuarios responder preguntas y obtener su puntuación al final del cuestionario',
          highlights: ['React.js', 'Zustand', 'Material UI'],
          url: 'https://js-quizz.vercel.app/',
          github: 'https://github.com/Fabriziomgh/js-quizz',
       },
-      // {
-      //    name: 'To do List App',
-      //    isActive: true,
-      //    description:
-      //       'El proyecto permite a los usuarios gestionar sus tareas diarias de forma interactiva.',
-      //    highlights: [
-      //       'Next',
-      //       'Supabase',
-      //       'Auth.js',
-      //       'Tailwind',
-      //       'Zod',
-      //       'Typescript',
-      //    ],
-      //    url: 'https://todolist-app-six-nu.vercel.app/',
-      //    github: 'https://github.com/Fabriziomgh/todolist-app',
-      // },
-      // {
-      //    name: 'Minimalist Portfolio',
-      //    isActive: true,
-      //    description: 'Portafolio minimalista basado en un archivo JSON.',
-      //    highlights: ['React', 'Typescript', 'Tailwind', 'Ninja Keys'],
-      //    url: 'https://fg-minimalist-portfolio.vercel.app/',
-      //    github: 'https://github.com/Fabriziomgh/minimalist-portfolio',
-      // },
+      {
+         name: 'Movies App',
+         img: '/img/movies-app.png',
+         isActive: false,
+         description:
+            'Una pequeña app donde puedes ver las películas más populares del momento, y buscar cualquier pelicula que desees',
+         highlights: ['React.js', 'React Native', 'Expo', 'TypeScript'],
+         url: null,
+         github: 'https://github.com/Fabriziomgh/movies-app',
+      },
    ],
 };

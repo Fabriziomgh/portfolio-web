@@ -39,7 +39,7 @@ const Projects = () => {
                         {item.isActive && (
                            <CustomLink
                               target
-                              href={item.url}
+                              href={item.url || '#'}
                               title={`Visitar página del proyecto ${item.name}`}
                               icon={TbLink}
                            >
