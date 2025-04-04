@@ -43,21 +43,6 @@ export const cv = {
    },
    work: [
       {
-         name: 'Instituto Nacional de los Espacios Acuáticos',
-         position: 'División de Tecnología',
-         url: 'https://www.inea.gob.ve/',
-         startDate: '2023-10-03',
-         endDate: '2024-01-24',
-         summary:
-            'Diseño y desarrollo de un sistema de gestión de expedientes para los trabajadores utilizando tecnologías como React para la interfaz de usuario y MySQL para la base de datos para agilizar las funciones dentro del area. Soporte técnico dentro del departamento de Recursos Humanos, asegurando la eficiencia y el funcionamiento óptimo de los sistemas informáticos.',
-         highlights: [
-            'Soporte técnico',
-            'Desarrollo y programación',
-            'Configuración de equipos',
-            'Redes',
-         ],
-      },
-      {
          name: 'MangoNetwork C.A',
          position: 'Analista de Soporte Técnico',
          url: 'https://www.mangonet.com.ve/punto-fijo',
@@ -71,6 +56,21 @@ export const cv = {
             'Configuración de equipos',
             'Mikrowisp',
             'SmartOLT',
+         ],
+      },
+      {
+         name: 'Instituto Nacional de los Espacios Acuáticos',
+         position: 'División de Tecnología - Programador',
+         url: 'https://www.inea.gob.ve/',
+         startDate: '2023-10-03',
+         endDate: '2024-01-24',
+         summary:
+            'Diseño y desarrollo de un sistema de gestión de expedientes para los trabajadores utilizando tecnologías como React para la interfaz de usuario y MySQL para la base de datos para agilizar las funciones dentro del area. Soporte técnico dentro del departamento de Recursos Humanos, asegurando la eficiencia y el funcionamiento óptimo de los sistemas informáticos.',
+         highlights: [
+            'Soporte técnico',
+            'Desarrollo y programación',
+            'Configuración de equipos',
+            'Redes',
          ],
       },
    ],
