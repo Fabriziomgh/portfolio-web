@@ -34,7 +34,7 @@ export const CustomTimeline = ({ data, formatType }: Props) => {
                      href={item.url}
                      target="_blank"
                      title={`Visitar sitio web de ${item.company}`}
-                     className="inline-block  text-lg font-semibold hover:underline  active:underline text-yellow-200 "
+                     className="inline-block font-fira-code-variable tracking-tighter  text-lg font-semibold hover:underline  active:underline text-yellow-200 "
                   >
                      {item.company}
                   </a>

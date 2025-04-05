@@ -23,18 +23,18 @@ const Hero = () => {
          </div>
          <div className="flex flex-col-reverse lg:flex-row justify-between">
             <div className="max-w-xl">
-               <h1 className="text-4xl font-bold tracking-tight text-gray-200 sm:text-5xl ">
+               <h1 className="text-3xl font-bold font-fira-code-variable tracking-tight text-gray-200 sm:text-5xl ">
                   {name}
                </h1>
-               <h2 className="text-2xl tracking-tight  text-gray-300 sm:text-3xl">
+               <h2 className="text-xl tracking-tight font-fira-code-variable  text-gray-300 sm:text-[22px]">
                   {level}
                </h2>
-               <h3 className="flex mt-2 items-center gap-x-2  tracking-tight text-gray-300 sm:text-2x">
+               <h3 className="flex mt-2 items-center gap-x-2 font-fira-code-variable tracking-tight text-gray-300 sm:text-2x">
                   {country}, {countryCode}
                   <TbWorld />
                </h3>
 
-               <p className="mt-6 text-xl  text-gray-300">
+               <p className="mt-6 text-xl text-gray-300">
                   {p1}. {p2}. <strong className="text-yellow-200">{p3}</strong>
                </p>
             </div>

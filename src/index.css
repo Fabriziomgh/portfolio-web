@@ -1,6 +1,12 @@
 @import "tailwindcss";
 
 
+@theme {
+  --font-fira-code-variable: 'Fira Code Variable', monospace;
+
+}
+
+
 html {
   font-family: 'Onest Variable', sans-serif;
   scroll-behavior: smooth;
