@@ -1,6 +1,6 @@
 import { CustomTitle } from '@/components/CustomTitle';
 import { CustomLink } from '@/components/CustomLink';
-import { Highlights } from '@/components/Highlights';
+import { Badges } from '@/components/Badges';
 
 import { TbBrandGithub, TbCode, TbLink } from 'react-icons/tb';
 
@@ -8,6 +8,7 @@ import { cv } from '@/data/data';
 
 const Projects = () => {
    const { projects } = cv;
+
    return (
       <section id="proyectos" className="mb-20">
          <CustomTitle>
@@ -15,7 +16,7 @@ const Projects = () => {
             Proyectos
          </CustomTitle>
 
-         <div className="space-y-8">
+         <div className="space-y-8 ">
             {projects.map((item) => (
                <div
                   key={item.name}
@@ -29,10 +30,10 @@ const Projects = () => {
                      />
                   </div>
                   <div className="md:col-span-2">
-                     <h4 className="text-2xl font-bold text-white mb-2  ">
+                     <h4 className="text-2xl font-bold text-white mb-2  font-fira-code-variable tracking-tight">
                         {item.name}
                      </h4>
-                     <Highlights highlights={item.highlights} />
+                     <Badges badges={item.highlights} />
                      <p className="mt-2 text-gray-400 ">{item.description}</p>
 
                      <div className="mt-6 flex items-center gap-2">

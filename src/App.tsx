@@ -1,10 +1,10 @@
-import Hero from '@/components/sections/Hero';
-import Experience from '@/components/sections/Experience';
-import Education from '@/components/sections/Education';
-import Skills from '@/components/sections/Skills';
-import Projects from '@/components/sections/Projects';
+import Hero from '@/sections/Hero';
+import Experience from '@/sections/Experience';
+import Education from '@/sections/Education';
+import Skills from '@/sections/Skills';
+import Projects from '@/sections/Projects';
 
-import { Navbar } from '@/components/sections/Navbar';
+import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 
 const App = () => {

@@ -256,7 +256,7 @@ export const cv = {
          isActive: true,
          description:
             'World Rank es una web que te permite ver todos los datos de un país en concreto, como tambien variedad de filtros para mostrar diferente información',
-         highlights: ['React.js', 'Next.js', 'Tailwind CSS'],
+         highlights: ['react', 'next', 'tailwind'],
          url: 'https://world-rank-beta.vercel.app/',
          github: 'https://github.com/Fabriziomgh/world-rank',
       },
@@ -266,7 +266,7 @@ export const cv = {
          isActive: true,
          description:
             'JS Quiz es una aplicación web que permite a los usuarios responder preguntas y obtener su puntuación al final del cuestionario',
-         highlights: ['React.js', 'Zustand', 'Material UI'],
+         highlights: ['react', 'zustand', 'material-ui'],
          url: 'https://js-quizz.vercel.app/',
          github: 'https://github.com/Fabriziomgh/js-quizz',
       },
@@ -276,7 +276,7 @@ export const cv = {
          isActive: false,
          description:
             'Una pequeña app donde puedes ver las películas más populares del momento, y buscar cualquier pelicula que desees',
-         highlights: ['React.js', 'React Native', 'Expo', 'TypeScript'],
+         highlights: ['react', 'react-native', 'expo', 'typescript'],
          url: null,
          github: 'https://github.com/Fabriziomgh/movies-app',
       },

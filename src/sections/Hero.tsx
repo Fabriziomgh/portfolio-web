@@ -1,6 +1,6 @@
 import { cv } from '@/data/data';
 import { TbMailShare, TbWorld } from 'react-icons/tb';
-import { CustomLink } from '../CustomLink';
+import { CustomLink } from '../components/CustomLink';
 
 const {
    basics: {
