@@ -1,7 +1,8 @@
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import '@fontsource-variable/onest';
-import '@fontsource-variable/fira-code';
+
+// @ts-expect-error Fuentes que no traen tipos
+import '@fontsource-variable/inter';
 
 import App from './App.tsx';
 

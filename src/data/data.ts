@@ -2,25 +2,42 @@ import {
    Git,
    Github,
    JavaScript,
+   CSS,
    MySQL,
    Nextjs,
    React,
    TailwindCSS,
    TypeScript,
+   Go,
+   MicrosoftSQLServer,
+   PostgreSQL,
+   Figma,
+   Nodejs,
 } from '@/components/Icons';
-import { TbBrandLinkedin, TbBrandGithub } from 'react-icons/tb';
+import {
+   TbBrandLinkedin,
+   TbBrandGithub,
+   TbDeviceDesktop,
+   TbServer,
+   TbDatabase,
+   TbGitFork,
+   TbAlignBoxLeftStretch,
+} from 'react-icons/tb';
 
 export const cv = {
    basics: {
       name: 'Fabrizio Gutiérrez',
       level: 'Ingeniero de Sistemas',
-      label: 'Programador Web - Frontend',
+      label: 'Full-Stack Web Developer',
       phone: '',
       image: 'https://avatars.githubusercontent.com/u/91578919?s=400&u=224bf569574504a79fb2e7b9cb40de788e9b0378&v=4',
       email: 'gutierrezfabrizio02@gmail.com',
       url: '',
-      summary:
-         'Habilidad y conocimientos para diseñar experiencias web interactivas, funcionales y eficientes. Mi compromiso con la mejora continua y mi pasión por la tecnología me motivan a mantenerme siempre actualizado con las últimas tendencias y mejores prácticas en el desarrollo Frontend. Me entusiasma el desarrollo ágil y el trabajo colaborativo en equipos multidisciplinarios para lograr soluciones innovadoras y de alto impacto',
+      summary: {
+         p1: 'Desarrollando aplicaciones web completas, combinando lógica backend con interfaces modernas y funcionales. ',
+         p2: '+1 año de experiencia creando soluciones full stack con enfoque en rendimiento, claridad de datos y arquitectura limpia. ',
+         p3: 'Mi fortaleza está en el desarrollo frontend, donde disfruto construir interfaces intuitivas, eficientes y fáciles de usar, siempre alineadas con la lógica del sistema.',
+      },
       location: {
          address: '',
          postalCode: '',
@@ -43,28 +60,46 @@ export const cv = {
    },
    work: [
       {
-         name: 'MangoNetwork C.A',
-         position: 'Analista de Soporte Técnico',
-         url: 'https://www.mangonet.com.ve/punto-fijo',
-         startDate: '2024-07-16',
-         endDate: '2024-10-14',
-         summary:
-            'Gestión proactiva de carteras de clientes en el sector de telecomunicaciones. Resolución de incidencias técnicas a través de herramientas como SmartOLT, asegurando la satisfacción del cliente y la optimización de los servicios. Configuración de equipos de internet y soporte técnico remoto, contribuyendo a la mejora continua de los procesos y la eficiencia operativa.',
+         company: 'Besser Solutions',
+         position: 'Programador Junior',
+         url: 'https://bessersolutions.com/',
+         startDate: '2024-06-20',
+         endDate: null,
+         description:
+            'Construcción de APIs RESTful para migración entre bases de datos, utilizando tecnologías como Golang y Gin.Optimización de consultas SQL y gestión de bases de datos relacionales para asegurar eficiencia en el manejo de la información. Colaboración en el diseño de interfaces de usuario mediante herramientas como Figma, trabajando en conjunto con equipos de diseño. Documentación detallada de código y procesos para facilitar el mantenimiento y escalabilidad de los proyectos.',
          highlights: [
-            'Soporte técnico',
-            'Telecomunicaciones',
-            'Configuración de equipos',
-            'Mikrowisp',
-            'SmartOLT',
+            'Programación backend (Golang)',
+            'Desarrollo de APIs y consumo de servicios REST',
+            'Figma',
+            'PostgreSQL',
+            'SQL Server',
          ],
+         isActive: true,
       },
+      // {
+      //    company: 'MangoNetwork C.A',
+      //    position: 'Analista de Soporte Técnico',
+      //    url: 'https://www.mangonet.com.ve/punto-fijo',
+      //    startDate: '2024-07-16',
+      //    endDate: '2024-10-14',
+      //    description:
+      //       'Gestión proactiva de carteras de clientes en el sector de telecomunicaciones. Resolución de incidencias técnicas a través de herramientas como SmartOLT, asegurando la satisfacción del cliente y la optimización de los servicios. Configuración de equipos de internet y soporte técnico remoto, contribuyendo a la mejora continua de los procesos y la eficiencia operativa.',
+      //    highlights: [
+      //       'Soporte técnico',
+      //       'Telecomunicaciones',
+      //       'Configuración de equipos',
+      //       'Mikrowisp',
+      //       'SmartOLT',
+      //    ],
+      //    isActive: false,
+      // },
       {
-         name: 'Instituto Nacional de los Espacios Acuáticos',
+         company: 'Instituto Nacional de los Espacios Acuáticos',
          position: 'División de Tecnología - Programador',
          url: 'https://www.inea.gob.ve/',
          startDate: '2023-10-03',
-         endDate: '2024-01-24',
-         summary:
+         endDate: '2025-08-24',
+         description:
             'Diseño y desarrollo de un sistema de gestión de expedientes para los trabajadores utilizando tecnologías como React para la interfaz de usuario y MySQL para la base de datos para agilizar las funciones dentro del area. Soporte técnico dentro del departamento de Recursos Humanos, asegurando la eficiencia y el funcionamiento óptimo de los sistemas informáticos.',
          highlights: [
             'Soporte técnico',
@@ -134,99 +169,137 @@ export const cv = {
          summary: 'Description…',
       },
    ],
-   skills: {
-      technologies: [
-         {
-            name: 'Javascript',
-            icon: JavaScript,
-         },
-         {
-            name: 'Typescript',
-            icon: TypeScript,
-         },
-         {
-            name: 'React.js',
-            icon: React,
-         },
-         {
-            name: 'Next.js',
-            icon: Nextjs,
-         },
-         {
-            name: 'Tailwind CSS',
-            icon: TailwindCSS,
-         },
-         {
-            name: 'Git',
-            icon: Git,
-         },
-         {
-            name: 'Github',
-            icon: Github,
-         },
-         {
-            name: 'MySQL',
-            icon: MySQL,
-         },
-      ],
-      technicalSkills: [
-         {
-            categoria: 'Lenguajes de Programación',
-            descripcion:
-               'Conocimientos y habilidades en JavaScript y TypeScript, con énfasis en desarrollo Frontend',
-         },
-         {
-            categoria: 'Desarrollo Frontend',
-            descripcion:
-               'Conocimientos y habilidades en React.js, Next.js y TailwindCSS para creación de interfaces modernas',
-         },
-         {
-            categoria: 'Control de Versiones',
-            descripcion:
-               'Manejo de Git y GitHub para seguimiento de cambios y trabajo colaborativo',
-         },
-         {
-            categoria: 'Bases de Datos',
-            descripcion:
-               'Manejo de MySQL para gestión y almacenamiento estructurado de información',
-         },
-         {
-            categoria: 'Manejo de Equipos',
-            descripcion:
-               'Habilidades en gestión y mantenimiento de hardware, dominio de S.O Windows',
-         },
-      ],
-      softSkills: [
-         {
-            categoria: 'Comunicación Efectiva',
-            descripcion:
-               'Claridad en expresión de ideas tanto verbal como escrita',
-         },
-         {
-            categoria: 'Trabajo en Equipo',
-            descripcion:
-               'Colaboración efectiva para alcanzar objetivos comunes',
-         },
-         {
-            categoria: 'Resolución de Problemas',
-            descripcion:
-               'Identificación y solución eficiente de desafíos técnicos',
-         },
-         {
-            categoria: 'Adaptabilidad',
-            descripcion: 'Ajuste rápido a nuevos entornos y tecnologías',
-         },
-         {
-            categoria: 'Gestión del Estrés',
-            descripcion: 'Mantenimiento de productividad bajo presión',
-         },
-         {
-            categoria: 'Puntualidad',
-            descripcion:
-               'Organización eficiente del tiempo y cumplimiento de plazos',
-         },
-      ],
-   },
+   skills: [
+      {
+         title: 'Frontend',
+         icon: TbDeviceDesktop,
+         technologies: [
+            {
+               name: 'JavaScript',
+               icon: JavaScript,
+               description:
+                  'Lenguaje de programación versátil para desarrollo web, habilitando interactividad en sitios web y aplicaciones.',
+               category: 'Frontend',
+            },
+            {
+               name: 'TypeScript',
+               icon: TypeScript,
+               description:
+                  'Superset de JavaScript que añade tipado estático para desarrollo más robusto, mantenible y escalable.',
+               category: 'Frontend',
+            },
+            {
+               name: 'React',
+               icon: React,
+               description:
+                  'Biblioteca de JavaScript para construir interfaces de usuario interactivas y componentes reutilizables.',
+               category: 'Frontend',
+            },
+            {
+               name: 'Next.js',
+               icon: Nextjs,
+               description:
+                  'Framework de React para aplicaciones web con renderizado del lado del servidor y generación estática.',
+               category: 'Frontend',
+            },
+            {
+               name: 'CSS',
+               icon: CSS,
+               description:
+                  'Lenguaje de hojas de estilo para describir la presentación de documentos HTML, controlando diseño y apariencia.',
+               category: 'Frontend',
+            },
+            {
+               name: 'Tailwind CSS',
+               icon: TailwindCSS,
+               description:
+                  'Framework de CSS utility-first para crear diseños personalizados de forma rápida y eficiente.',
+               category: 'Frontend',
+            },
+         ],
+      },
+      {
+         title: 'Backend',
+         icon: TbServer,
+         technologies: [
+            {
+               name: 'Golang',
+               icon: Go,
+               description:
+                  'Lenguaje de programación compilado, concurrente y eficiente desarrollado por Google para sistemas escalables.',
+               category: 'Backend',
+            },
+            {
+               name: 'Node.js',
+               icon: Nodejs,
+               description:
+                  'Entorno de ejecución de JavaScript del lado del servidor que permite construir aplicaciones escalables y de alto rendimiento',
+               category: 'Backend',
+            },
+         ],
+      },
+      {
+         title: 'Base de Datos',
+         icon: TbDatabase,
+         technologies: [
+            {
+               name: 'PostgreSQL',
+               icon: PostgreSQL,
+               description:
+                  'Sistema de gestión de bases de datos relacional avanzado, open source y con soporte para JSON.',
+               category: 'Database',
+            },
+            {
+               name: 'Microsoft SQL Server',
+               icon: MicrosoftSQLServer,
+               description:
+                  'Sistema de gestión de bases de datos relacional desarrollado por Microsoft para entornos empresariales.',
+               category: 'Database',
+            },
+            {
+               name: 'MySQL',
+               icon: MySQL,
+               description:
+                  'Sistema de gestión de bases de datos relacional open source ampliamente utilizado en aplicaciones web.',
+               category: 'Database',
+            },
+         ],
+      },
+      {
+         title: 'Control de Versiones',
+         icon: TbGitFork,
+         technologies: [
+            {
+               name: 'Git',
+               icon: Git,
+               description:
+                  'Sistema de control de versiones distribuido para rastrear cambios en el código fuente de forma eficiente.',
+               category: 'Versiones',
+            },
+            {
+               name: 'GitHub',
+               icon: Github,
+               description:
+                  'Plataforma de desarrollo colaborativo basada en Git para alojar proyectos y facilitar el trabajo en equipo.',
+               category: 'Versiones',
+            },
+         ],
+      },
+      {
+         title: 'Diseño',
+         icon: TbAlignBoxLeftStretch,
+         technologies: [
+            {
+               name: 'Figma',
+               icon: Figma,
+               description:
+                  'Herramienta de diseño colaborativo en la nube para crear interfaces de usuario y prototipos interactivos.',
+               category: 'Diseño',
+            },
+         ],
+      },
+   ],
+
    languages: [
       {
          language: 'Español',
@@ -277,7 +350,7 @@ export const cv = {
          description:
             'Una pequeña app donde puedes ver las películas más populares del momento, y buscar cualquier pelicula que desees',
          highlights: ['react', 'react-native', 'expo', 'typescript'],
-         url: null,
+         url: undefined,
          github: 'https://github.com/Fabriziomgh/movies-app',
       },
    ],

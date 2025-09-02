@@ -1,64 +1,42 @@
-import { CustomTitle } from '@/components/CustomTitle';
-import { CustomLink } from '@/components/CustomLink';
-import { Badges } from '@/components/Badges';
-
-import { TbBrandGithub, TbCode, TbLink } from 'react-icons/tb';
-
 import { cv } from '@/data/data';
+import { CardProject } from '@/components/CardProject';
 
 const Projects = () => {
    const { projects } = cv;
 
    return (
-      <section id="proyectos" className="mb-20">
-         <CustomTitle>
-            <TbCode />
-            Proyectos
-         </CustomTitle>
+      <section id="proyectos" className="min-h-screen mb-10 lg:mb-20">
+         <div className="mb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold sm:text-4xl lg:text-5xl text-primary">
+               Proyectos
+               <span className="ml-3 text-third">Realizados</span>
+            </h2>
+            <p className=" text-secondary">
+               Una selección de proyectos que demuestran mis habilidades en
+               desarrollo web y las tecnologías que manejo.
+            </p>
+         </div>
 
-         <div className="space-y-8 ">
-            {projects.map((item) => (
-               <div
-                  key={item.name}
-                  className="grid grid-cols-1 md:grid-cols-3 md:gap-x-4 "
-               >
-                  <div>
-                     <img
-                        className="w-full mb-3 md:mb-0 md:h-48 h-64 rounded-xl shadow hover:scale-105 transition duration-500 cursor-pointer"
-                        src={item.img}
-                        alt=""
-                     />
-                  </div>
-                  <div className="md:col-span-2">
-                     <h4 className="text-2xl font-bold text-white mb-2  font-fira-code-variable tracking-tight">
-                        {item.name}
-                     </h4>
-                     <Badges badges={item.highlights} />
-                     <p className="mt-2 text-gray-400 ">{item.description}</p>
-
-                     <div className="mt-6 flex items-center gap-2">
-                        {item.isActive && (
-                           <CustomLink
-                              target
-                              href={item.url || '#'}
-                              title={`Visitar página del proyecto ${item.name}`}
-                              icon={TbLink}
-                           >
-                              Visualizar
-                           </CustomLink>
-                        )}
-                        <CustomLink
-                           target
-                           href={item.github}
-                           title="Código fuente"
-                           icon={TbBrandGithub}
-                        >
-                           Código
-                        </CustomLink>
-                     </div>
-                  </div>
-               </div>
+         <div className="space-y-8">
+            {projects.map((project, index) => (
+               <CardProject
+                  key={index}
+                  name={project.name}
+                  description={project.description}
+                  img={project.img}
+                  highlights={project.highlights}
+                  github={project.github}
+                  url={project.url}
+               />
             ))}
+         </div>
+
+         <div className="mt-4 text-center">
+            <p className="mt-8 text-sm text-secondary">
+               Constantemente trabajando en nuevos proyectos y explorando
+               tecnologías innovadoras.
+            </p>
+            <div className="h-px mt-2 w-full bg-border" />
          </div>
       </section>
    );

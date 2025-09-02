@@ -1,21 +1,24 @@
-@import "tailwindcss";
-
+@import 'tailwindcss';
+@import 'tailwindcss-animated';
 
 @theme {
-  --font-fira-code-variable: 'Fira Code Variable', monospace;
+   --color-background: #1a1a1a;
+   --color-primary: #f3f3f3;
+   --color-secondary: #a2a2a1;
+   --color-third: #ff8904;
+   --color-background-card: #171717;
+   --color-border: #262626;
 
-}
 
 
-html {
-  font-family: 'Onest Variable', sans-serif;
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px
 }
 
 :root {
-  background-color: #030712;
-  background-image: radial-gradient(ellipse 80% 80% at 50% -20%,
-      rgba(120, 119, 198, 0.3),
-      rgba(255, 255, 255, 0));
+   background-color: var(--color-background);
+}
+
+html {
+   font-family: 'Inter Variable', sans-serif;
+   scroll-padding-top: 120px;
+   scroll-behavior: smooth;
 }
